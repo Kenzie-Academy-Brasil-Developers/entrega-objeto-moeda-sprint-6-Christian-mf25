@@ -40,12 +40,9 @@ function display20Flips() {
 	for(let i = 0; i < 20; i++){
 		coin.flip()
 		results.push(coin.toString())
-	}
-
-	for(let i = 0; i < results.length; i++){
 		text.innerText += results[i] + " "
 	}
-	
+
 	body.appendChild(text)
 	return results
 }
@@ -59,12 +56,8 @@ function display20Images() {
 	for(let i = 0; i < 20; i++){
 		coin.flip()
 		results.push(coin.toHTML())
-	}
-
-	for(let i = 0; i < results.length; i++){
 		body.appendChild(results[i])
 	}
 	return results
 }
 display20Images()
-
